@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VR Castle</title>
+    <script src="https://aframe.io/releases/1.0.3/aframe.min.js"></script>
+  </head>
+    <body>
+    <a-scene>
+      <a-sky src="CastleSkyBox.jpg"></a-sky>
+          <a-entity  animation="property: object3D.position.y; to: 2.5; dir: alternate; dur: 1000; loop: true"> 
+          <a-obj-model scale="0.1 0.1 0.1" rotation="0 180 0" position="0 -0.2 -3.5"
+                    src="cookie.obj"
+                   mtl="cookie.mtl"></a-obj-model>
+        </a-entity>
+    </a-scene>
+  </body>
+</html>
